@@ -75,6 +75,11 @@ form {
   margin: 0;
 }
 
+#form_container {
+  margin-bottom: 70px;
+}
+
+
     /*----- Tab Links -----*/
     /* Clearfix */
 

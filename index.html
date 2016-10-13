@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comments Box</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="comments_style.css" media="screen">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  </head>
+
+  <body>
+    <div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Details</a></li>
+        <li><a href="#tab2">Comments</a></li>
+        <li><a href="#tab3">Styles</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <!-- <h4>Details</h4> -->
+            <p>Details of the shoe go here</p>
+        </div>
+
+        <div id="tab2" class="tab">
+            <!-- <h4>Comments</h4> -->
+            <div class="w3-container" id="leave_one_container">
+
+
+<!-- Leave a comment button + modal below -->
+
+            <button onclick="document.getElementById('id01').style.display='block'"
+            class="w3-btn" id="leave_one">Leave a comment!</button>
+          </div>
+
+                <!-- modal -->
+              <div id="id01" class="w3-modal">
+              <div class="w3-modal-content">
+                <div class="w3-container">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
+
+                <form class="comments-form" action="index.html" method="post">
+
+                  Name: <input type="text" id="name" class="input-box" placeholder="Enter Name">
+                  <br>
+                  <br>
+                  Date: <input type="date" id="date" class="input-box">
+                  <br>
+                  <br>
+                  E-mail: <input type="email" id="email" class="input-box" placeholder="Type E-Mail">
+                  <br>
+                  <br>
+                  Location: <input type="dropdown" id="location" class="input-box" placeholder="Where are you?">
+                  <br>
+                  <br>
+                  Upload a picture: <input type="file" id="picture" class="input-box">
+                  <br>
+                  <br>
+                  Comment: <input type="text" id="type-comment" class="input-box" placeholder="Tell us what you think!" >
+                  <br>
+                  <br>
+                  <input type="submit" id="submit" class="input-box">
+
+                </form>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- If no comments, display <h4>No comments yet, be the first!</h4>, else display comments with scroll -->
+
+            <span>No comments yet, be the first!</span>
+
+            <!-- If there are comments, there will be a scrollable section to view them, below are some lorem ipsum examples -->
+
+            <div class="scroll">
+              <div class="">
+                <form class="comments-post" action="index.html" method="post">
+                <p>Name:</p>
+                <p>Date:</p>
+                <p>Location:</p>
+                <p>Rating:</p>
+                <p>Comment: </p>
+                <hr>
+              </div>
+              </form>
+            </div>
+
+
+          <!-- possibly will add bootstrap modal above , will need to add scroll to css (overflow-y: scroll)-->
+        </div>
+
+        <div id="tab3" class="tab">
+            <!-- <h4>Styles</h4> -->
+            <p>Additional shoe styles go here</p>
+        </div>
+
+    </div>
+</div>
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="comments_js.js"></script>
+  </body>
+</html>
+
+<!-- Using tutorial from http://inspirationalpixels.com/tutorials/creating-tabs-with-html-css-and-jquery -->

@@ -1,0 +1,179 @@
+body {
+  max-height: 185.28;
+  overflow-y: scroll;
+  font-family: 'Lato', sans-serif;
+
+}
+
+
+/*----Scroll----*/
+
+.scroll {
+  width:420px;
+  height:150px;
+  line-height:3em;
+  overflow:auto;
+  padding:5px;
+  margin-top: 45px;
+  margin-left: 30px;
+  border: 1px pink dotted;
+}
+
+.comments-post {
+  font-family: 'Lato', sans-serif;
+  color: grey;
+  font-size: 16px;
+
+
+}
+
+hr {
+  height: 10px;
+
+}
+
+/*----- Tabs -----*/
+.tabs {
+    width:519px;
+    display:inline-block;
+    margin: 120px;
+    font-family: 'Lato', sans-serif;
+    /*border: 1px dotted black;*/
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.15);
+
+}
+
+#commentlink {
+    color: #EC008C;
+    font-size: 14px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+}
+
+  #commentlink:active {
+  background-color: black;
+}
+
+/*Comments Form*/
+
+.comments-form {
+  align-content: center;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  padding: 50px;
+
+}
+
+form {
+  margin-right: 0px;
+}
+
+.input-box {
+  padding: 10px;
+  margin: 0;
+}
+
+    /*----- Tab Links -----*/
+    /* Clearfix */
+
+    .tab-links {
+      padding-left: 0;
+      text-decoration: none;
+    }
+
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+    }
+
+        .tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            font-variant: small-caps;
+            /*border-radius:3px 3px 0px 0px;*/
+            background: transparent;
+            font-size:16px;
+            color: black;
+            /*transition:all linear 0.15s;*/
+            text-decoration: none;
+
+        }
+
+        .tab-links a:hover {
+            background: white;
+            color: #EC008C;
+
+        }
+
+    li.active a, li.active a:hover {
+        color: #EC008C;
+        font-weight: bolder;
+    }
+
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding: 0px 20px 25px 20px;
+        border-radius:13px;
+        /*box-shadow: 1px 1px 1px rgba(0,0,0,0.15);*/
+        background:#fff;
+    }
+
+        .tab {
+            display:none;
+        }
+
+        .tab.active {
+            display:block;
+        }
+
+        #leave_one {
+          border-radius: 5px;
+          border: 2px dotted #EC008C;
+          font-variant: small-caps;
+          background-color: transparent;
+          color: black;
+        }
+
+        #leave_one_container {
+          max-width: 150px;
+          float: right;
+          padding-right: 175px;
+        }
+
+        /*----- Input Styles -----*/
+
+        input {
+          width: 100%;
+          border: 1px dashed #EC008C;
+          border-radius: 4px;
+          outline: none;
+        }
+
+        input:focus {
+          border: 1px solid #EC008C;
+
+        }
+
+        input[type=text] {
+          padding: 12px 20px;
+          /*margin: 8px 0;*/
+          box-sizing: border-box;
+        }
+
+        input[type=submit] {
+          border: none;
+          width: 25%;
+          align-self: center;
+          cursor: grab;
+          background-color: black;
+          color: white;
+        }
